@@ -39,13 +39,15 @@ public class BST{
 		Tree t7=new Tree(7);
 		Tree t8=new Tree(8);
 		Tree t9=new Tree(1);
-		t1.left=t2;
+        t1.parent(t1,t2,"l");
+		//t1.left=t2;
 		t1.right=t3;
 		t2.left=t4;
 		t2.right=t5;
-		t3.left=t6;
-		t3.right=t9;
+		t3.right=t6;
+		//t3.right=t9;
 		BST bst =new BST();
+
         bst.v(t1);
  }
 
