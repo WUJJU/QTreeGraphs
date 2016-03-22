@@ -1,12 +1,15 @@
 import java.util.*;
 
 public class Tree{
+
+	public Boolean vist;
   
     public int value;
     public Tree left;
     public Tree right;
 	public Tree(int i){
      this.value=i;
+     this.vist=false;
 
 	}
 	public Boolean hasChild(){
