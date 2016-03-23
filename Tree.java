@@ -4,6 +4,7 @@ public class Tree{
 
 	public Boolean vist;
     public Tree parent;
+    public Tree [] parents;
     public int value;
     public Tree left;
     public Tree right;
@@ -22,6 +23,7 @@ public class Tree{
 		if(tree.left!=null) return tree.left;
 		else return tree.right;
 	}
+
 	public void parent(Tree par, Tree child,String LorR){
          if(LorR=="l") {
          	par.left=child;
