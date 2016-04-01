@@ -18,6 +18,16 @@ public class TreeNode{
     	data=i;
     	size=1;
     }
+
+    public ArrayList<TreeNode> children(){
+           ArrayList<TreeNode> array=new ArrayList<TreeNode>();
+        if(left==null&&right==null) return null;
+        if(left!=null) array.add(left);
+        if(right!=null) array.add(right);
+        return array;
+     
+    }
+    
     public TreeNode randomN(){
     	Random r=new Random();
     	int random=r.nextInt(this.size);
